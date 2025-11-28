@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Daraz Automation">
+
+    <test name="All Tests">
+        <classes>
+            <!-- Base tests -->
+            <class name="tests.LaunchDarazTest"/>
+            <class name="tests.SearchProductTest"/>
+            <class name="tests.InvalidSearchTest"/>
+            <class name="tests.OpenProductTest"/>
+
+            <!-- Filters & Sorting -->
+            <class name="tests.ApplyPriceFilterTest"/>
+            <class name="tests.SortProductsTest"/>
+
+            <!-- Product Details -->
+            <class name="tests.VerifyProductDetailsTest"/>
+            <class name="tests.ImageGalleryTest"/>
+
+            <!-- Pagination -->
+            <class name="tests.PaginationTest"/>
+
+            <!-- End To End Flow -->
+            <class name="tests.EndToEndFlowTest"/>
+        </classes>
+    </test>
+
+</suite>
