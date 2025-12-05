@@ -20,7 +20,7 @@ public class EndToEndFlowTest extends BaseTest {
         // 1. Launch Daraz Home Page
         driver.get("https://www.daraz.lk/");
         Assert.assertTrue(driver.getTitle().length() > 0, "Daraz home page did not load!");
-        System.out.println("✓ Launched Daraz.lk");
+        System.out.println("Launched Daraz.lk");
 
 
         // 2. Search for a product (Laptop)
@@ -31,7 +31,7 @@ public class EndToEndFlowTest extends BaseTest {
 
         Assert.assertTrue(driver.getTitle().toLowerCase().contains("laptop"),
                 "Search results title does not show laptop!");
-        System.out.println("✓ Search results loaded");
+        System.out.println("Search results loaded");
 
 
         // 3. Apply Price Filter (100,000 - 500,000)
@@ -136,4 +136,5 @@ public class EndToEndFlowTest extends BaseTest {
         System.out.println("\n END-TO-END FLOW PASSED SUCCESSFULLY!");
     }
 }
+
 
